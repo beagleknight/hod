@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+
+<span *ngIf="loading">Loading dogs...</span>
+<ul>
+  <li *ngFor="let dog of dogs">
+    {{ dog.name }} - {{ dog.breed }}
+  </li>
+</ul>
